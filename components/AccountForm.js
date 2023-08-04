@@ -6,6 +6,9 @@ import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { useToast } from "@/components/ui/use-toast"
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 const AccountForm = ({ User }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')

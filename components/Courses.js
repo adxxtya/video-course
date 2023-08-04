@@ -6,6 +6,9 @@ import courses from "@/controllers/course_list.json"
 import Image from 'next/image';
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 const Courses = ({ User }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const filteredCourses = courses.filter((course) =>

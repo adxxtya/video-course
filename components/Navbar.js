@@ -4,7 +4,8 @@ import { cookies } from 'next/headers'
 import { Button } from './ui/button';
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 const Sidebar = async ({ children }) => {
 

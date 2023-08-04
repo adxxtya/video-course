@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { cookies } from 'next/headers'
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 const Hero = async ({
   listUser = [
