@@ -2,6 +2,8 @@ import AccountForm from '@/components/AccountForm'
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 
+export const dynamic = 'force-dynamic'
+
 export default async function Login() {
 
   let user;
